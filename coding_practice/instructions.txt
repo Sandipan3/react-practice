@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandipan Jha Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #about {
+      background-color: #f4f4f4;
+    }
+
+    #projects .project {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      padding: 10px;
+      border-left: 5px solid #333;
+      max-width: 600px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Hello! I am Sandipan Jha, a passionate developer with expertise in web development and AI projects. I enjoy exploring new challenges in technology and continuously expanding my skill set.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Coffee Shop Management System</h3>
+      <p>This is a comprehensive coffee shop management system for handling orders, inventory, and customer interactions using JavaScript and Python.</p>
+      <a href="">View Project</a>
+    </div>
+    <div class="project">
+      <h3>RADAR using Arduino</h3>
+      <p>Built a simple RADAR using Arduino Uno, servo motor and ultrasonic distance sensor</p>
+    </div>
+<div class="project">
+      <h3>Image classifier</h3>
+      <p>Built a crop disease image classifier using YOLO</p>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <blockquote>
+      <p>"Sandipan Jha is a talented developer with strong skills and an excellent work ethic."</p>
+      <cite>- Saptak Chaki</cite>
+    </blockquote>
+    <blockquote>
+      <p>"I've had the pleasure of working with Sandipan, and their technical abilities are remarkable."</p>
+      <cite>- Soham Mondal</cite>
+    </blockquote>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me: 
+      <a href="" style="color: #fff;">LinkedIn</a> | 
+      <a href="" style="color: #fff;">GitHub</a> | 
+      <a href="" style="color: #fff;">Email</a>
+    </p>
+  </footer>
+
+  <script>
+    // JavaScript for smooth scrolling to sections
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
